@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-buildo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "buildo's Stylelint configuration, following our styleguide",
   "main": "rules.js",
   "scripts": {
