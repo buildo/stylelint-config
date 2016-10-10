@@ -1,0 +1,139 @@
+.button .button-inner {
+
+  // commons
+  position: relative;
+
+  // default sizes
+  padding: 0 $horizontal-padding;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  height: $height;
+
+  // default colors and other style
+  background: $background;
+  cursor: pointer;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-align: center;
+
+  .button-loading {
+    position: relative;
+  }
+
+  // sub-components/sub-elements
+  .button-icon,
+  .button-loading,
+  .button-label {
+    margin: 0 3px;
+  }
+
+  .button-loading {
+    height: 1em;
+    width: 1em;
+  }
+
+  //types
+  &.is-default {
+    border: $default-border-width solid $default-border-color;
+    background: $default-background;
+    color: $default-color;
+
+    &:hover:not(.is-not-allowed):not(.is-processing) {
+      background: $default-background-hover;
+    }
+  }
+
+  &.is-primary {
+    border: $primary-border-width solid $primary-border-color;
+    background: $primary-background;
+    color: $primary-color;
+
+    &:hover:not(.is-not-allowed):not(.is-processing) {
+      background: $primary-background-hover;
+    }
+  }
+
+  &.is-positive,
+  &.is-success {
+    border: $positive-border-width solid $positive-border-color;
+    background: $positive-background;
+    color: $positive-color;
+
+    &:hover:not(.is-not-allowed):not(.is-processing) {
+      background: $positive-background-hover;
+    }
+  }
+
+  &.is-negative,
+  &.is-error {
+    border: $negative-border-width solid $negative-border-color;
+    background: $negative-background;
+    color: $negative-color;
+
+    &:hover:not(.is-not-allowed):not(.is-processing) {
+      background: $negative-background-hover;
+    }
+  }
+
+  &.is-flat {
+    padding: 0 $flat-horizontal-padding !important; //!important because it should not be ovverridden by small/tiny variations
+    border: $flat-border-width solid $flat-border-color;
+    background: $flat-background;
+    color: $flat-color;
+
+    &:hover:not(.is-not-allowed):not(.is-processing) {
+      border: $flat-border-width-hover solid $flat-border-color-hover;
+      background: $flat-background-hover;
+      color: $flat-color-hover;
+    }
+  }
+
+  // variations
+  &.icon-button {
+    padding: 0 $icon-button-horizontal-padding !important;//!important because it should not be ovverridden by small/tiny variations
+    &.circular {
+      padding: $icon-button-circular-padding !important;
+      border-radius: 100% !important;//!important because it should not be ovverridden by small/tiny variations//!important because it should not be ovverridden by small/tiny variations
+      &.is-medium {
+        width: $medium-height;
+      }
+
+      &.is-small {
+        width: $small-height;
+      }
+
+      &.is-tiny {
+        width: $tiny-height;
+      }
+    }
+  }
+
+  // sizes
+  &.is-tiny {
+    padding: 0 $tiny-horizontal-padding;
+    height: $tiny-height;
+    font-size: $tiny-font-size;
+  }
+
+  &.is-small {
+    padding: 0 $small-horizontal-padding;
+    height: $small-height;
+    font-size: $small-font-size;
+  }
+
+  &.is-medium {
+    padding: 0 $medium-horizontal-padding;
+    height: $medium-height;
+    font-size: $medium-font-size;
+  }
+
+  &.is-not-allowed {
+    cursor: $disabled-button-cursor;
+    opacity: $disabled-button-opacity;
+  }
+
+  &.is-processing {
+    cursor: default;
+  }
+}
