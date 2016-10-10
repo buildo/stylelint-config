@@ -5,8 +5,7 @@
   "main": "rules.js",
   "scripts": {
     "test": "jest test",
-    "preversion": "npm test",
-    "prepublish": "npm test"
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,8 @@
   },
   "homepage": "https://github.com/buildo/stylelint-config#readme",
   "dependencies": {
-    "stylelint-config-standard": "^13.0.2"
+    "stylelint-config-standard": "^13.0.2",
+    "stylelint-scss": "^1.3.4"
   },
   "devDependencies": {
     "jest": "^16.0.1",
