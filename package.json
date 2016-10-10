@@ -4,7 +4,9 @@
   "description": "buildo's Stylelint configuration, following our styleguide",
   "main": "rules.js",
   "scripts": {
-    "test": "jest test"
+    "test": "jest test",
+    "preversion": "npm test",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
