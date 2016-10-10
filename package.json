@@ -1,0 +1,35 @@
+{
+  "name": "stylelint-config-buildo",
+  "version": "0.0.1",
+  "description": "buildo's Stylelint configuration, following our styleguide",
+  "main": "rules.js",
+  "scripts": {
+    "lint-style": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildo/stylelint-config.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "buildo",
+    "styleguide",
+    "sass"
+  ],
+  "author": "Francesco Cioria <francesco@buildo.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buildo/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/buildo/stylelint-config#readme",
+  "dependencies": {
+    "stylelint-config-standard": "^13.0.2"
+  },
+  "devDependencies": {
+    "stylelint": "^7"
+  },
+  "peerDependencies": {
+    "stylelint": "^7"
+  }
+}
