@@ -4,7 +4,7 @@
   "description": "buildo's Stylelint configuration, following our styleguide",
   "main": "rules.js",
   "scripts": {
-    "test": "jest test",
+    "test": "jest",
     "preversion": "npm test"
   },
   "repository": {
@@ -29,7 +29,7 @@
     "stylelint-scss": "^1.3.4"
   },
   "devDependencies": {
-    "jest": "^16.0.1",
+    "jest": "^17.0.0",
     "stylelint": "^7"
   },
   "peerDependencies": {
